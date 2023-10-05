@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/images.jpeg">
 
+    <!-- linkeo el bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <!-- conectamos con el css -->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -23,25 +27,56 @@
     <header class="header">
 
         <div class="header__div">
+
             <img src="../assets/img/Logo.png" alt="Messi Campeon del Mundo">
+
+            <div class="header__div--nav">
+
+                <h1>Mundial Qatar 2022</h1>
+
+                <nav class="navbar navbar-expand-lg navbar-light">
+
+                    <div class="container">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                            <ul class="navbar-nav mb-2 mb-lg-0 header__div--ul">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown">Fases</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="faseDeGrupos.html">Fase de Grupos</a></li>
+                                        <li><a class="dropdown-item" href="octavos.html">Octavos</a></li>
+                                        <li><a class="dropdown-item" href="cuartos.html">Cuartos</a></li>
+                                        <li><a class="dropdown-item" href="semifinal.html">Semifinal</a></li>
+                                        <li><a class="dropdown-item" href="Final.html">Final</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item"><a class="nav-link" href="#">Selecciones</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Estadios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </nav>
+            </div>
         </div>
-
-
-        <nav class="header__nav">
-
-            <h1>Mundial Qatar 2022</h1>
-            <ul class="header__nav--ul">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="faseDeGrupos.html">Fase de Grupos</a></li>
-                <li><a href="octavos.html">Octavos</a></li>
-                <li><a href="cuartos.html">Cuartos</a></li>
-                <li><a href="semifinal.html">Semifinal</a></li>
-                <li><a href="Final.html">Final</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-    </header>>
+    </header>
 
     <!-- info del sitio -->
     <main class="content">
@@ -227,6 +262,11 @@
         </div>
 
     </footer>
+
+    <!-- javascript de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 

@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/images.jpeg">
 
+    <!-- linkeo el bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <!-- conectamos con el css -->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -20,21 +24,57 @@
 <body>
 
     <!-- Inicio del menu de navegacion (Logo + header [Pueden ir mas cosas])-->
-<header id="top">
-        <img src="../assets/img/Logo.png" alt="Messi Campeon del Mundo">
-        <div>
-            <h1>Mundial Qatar 2022</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="faseDeGrupos.html">Fase de Grupos</a></li>
-                    <li><a href="octavos.html">Octavos</a></li>
-                    <li><a href="cuartos.html">Cuartos</a></li>
-                    <li><a href="semifinal.html">Semifinal</a></li>
-                    <li><a href="Final.html">Final</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+
+        <div class="header__div">
+
+            <img src="../assets/img/Logo.png" alt="Messi Campeon del Mundo">
+
+            <div class="header__div--nav">
+
+                <h1>Mundial Qatar 2022</h1>
+
+                <nav class="navbar navbar-expand-lg navbar-light">
+
+                    <div class="container">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                            <ul class="navbar-nav mb-2 mb-lg-0 header__div--ul">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown">Fases</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="faseDeGrupos.html">Fase de Grupos</a></li>
+                                        <li><a class="dropdown-item" href="octavos.html">Octavos</a></li>
+                                        <li><a class="dropdown-item" href="cuartos.html">Cuartos</a></li>
+                                        <li><a class="dropdown-item" href="semifinal.html">Semifinal</a></li>
+                                        <li><a class="dropdown-item" href="Final.html">Final</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item"><a class="nav-link" href="#">Selecciones</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Estadios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -101,48 +141,55 @@
     </section>
 
     <!-- INICIO del FOOTER-->
-    <footer id="foot">
+    <footer class="foot">
 
-        <ul>
-            <h3>Acerca de...</h3>
-            <ul>
-                <li><a href="servicios.html">Legales</a></li>
-                <li><a href="servicios.html">Privacidad</a></li>
-                <li><a href="servicios.html">[TELEFONO]</a></li>
-                <li><a href="servicios.html">[DIRECCION]</a></li>
+        <div class="foot__div">
+            <h3 class="foot__div--h3">Acerca de...</h3>
+            <ul class="foot__div--ul">
+                <li><a href="faseDeGrupos.html">Legales</a></li>
+                <li><a href="faseDeGrupos.html">Privacidad</a></li>
+                <li><a href="faseDeGrupos.html">[TELEFONO]</a></li>
+                <li><a href="faseDeGrupos.html">[DIRECCION]</a></li>
             </ul>
-        </ul>
-        <ul>
-            <h3>Fases</h3>
-            <UL>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./html/faseDeGrupos.html">Fase de Grupos</a></li>
-                <li><a href="./html/octavos.html">Octavos</a></li>
-                <li><a href="./html/cuartos.html">Cuartos</a></li>
-                <li><a href="./html/semifinal.html">Semifinal</a></li>
-                <li><a href="./html/Final.html">Final</a></li>
+        </div>
 
-            </UL>
-        </ul>
-        <ul>
-            <h3>Redes y Contactos</h3>
-            <ul>
+        <div class="foot__div">
+            <h3 class="foot__div--h3">Fases</h3>
+            <ul class="foot__div--ul">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="faseDeGrupos.html">Fase de Grupos</a></li>
+                <li><a href="octavos.html">Octavos</a></li>
+                <li><a href="cuartos.html">Cuartos</a></li>
+                <li><a href="semifinal.html">Semifinal</a></li>
+                <li><a href="Final.html">Final</a></li>
+
+            </ul>
+        </div>
+
+        <div class="foot__div">
+            <h3 class="foot__div--h3">Redes y Contactos</h3>
+            <ul class="foot__div--ul">
                 <li><a href="https://www.twitter.com">Twitter</a></li>
                 <li><a href="https://www.facebook.com">Facebook</a></li>
                 <li><a href="https://www.instagram.com">Instagram</a></li>
                 <li><a href="https://www.linkedin.com">linkedin</a></li>
-                <li><a href="./html/Contacto.html">Contacto</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
             </ul>
-        </ul>
-        <ul>
-            <h3>Ubicacion del Encuentro</h3>
-            <ul><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d923087.7182929453!2d51.58400005!3d25.344109000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x1cfa88cf812b4032!2sCatar!5e0!3m2!1ses-419!2sar!4v1694524901471!5m2!1ses-419!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe></ul>
+        </div>
 
-        </ul>
+        <div class="foot__div--ubicacion">
+            <h3 class="foot__div--h3">Ubicacion del Encuentro</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d923087.7182929453!2d51.58400005!3d25.344109000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x1cfa88cf812b4032!2sCatar!5e0!3m2!1ses-419!2sar!4v1694524901471!5m2!1ses-419!2sar"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </footer>
+
+    <!-- javascript de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 
