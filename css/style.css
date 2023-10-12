@@ -355,6 +355,28 @@ a:not([href]):not([class]) {
     background-color: rgb(155, 13, 53);
 }
 
+.form_7{
+    font-family: "Qatar2022";
+    margin: 1vw;
+}
+
+.form-floating>.coment__box{
+    height: 20vw;
+}
+
+.botones {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.botones input{
+    margin: 4vw;
+    width: 40%;
+}
+
 /* configuracion del resposive */
 
 @media (min-width: 1200px) {
