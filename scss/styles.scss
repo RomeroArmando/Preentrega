@@ -1,10 +1,10 @@
-/*reseteo*/
+//reseteo
 * {
     margin: 0;
     padding: 0;
 }
 
-/*declaracion de fuente*/
+//declaracion de fuente
 @font-face {
     font-family: "Qatar2022";
     src: url("../assets/fonts/Qatar2022.woff2");
@@ -15,7 +15,7 @@ ul {
     text-decoration: none;
 }
 
-/* Header*/
+//header
 .header {
     font-family: "Qatar2022";
     background-color: rgb(74, 2, 24);
@@ -28,45 +28,49 @@ ul {
     flex-direction: row;
 
     padding: 0 0 3px 3px;
+
+    img {
+        width: 10vw;
+    }
 }
 
 .header__div--nav {
     display: flex;
     flex-direction: column;
-    width: 90vw;
+    width: 85vw;
     color: white;
     text-align: center;
     font-size: xx-large;
     align-items: center;
     justify-content: center;
+
+    h1 {
+        margin: 2vw 0;
+        padding: 0;
+    }
+
+    nav {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
 }
 
-.header__div--nav h1 {
-    margin: 2vw 0;
-    padding: 0;
+.navbar {
+
+    li {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
-.header__div--nav nav {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-.navbar li {
-    display: flex;
-    flex-direction: row;
-}
-
-.navbar ul {
-    width: 100%;
-    justify-content: space-between;
-}
-
-.header__div img {
-    width: 10vw;
-}
-
-/* configuracion del color de letra y botones del nav */
+//configuracion del color de letra y botones del nav
 .navbar-light .navbar-nav .nav-link {
     color: white;
 }
@@ -82,7 +86,7 @@ ul {
 
 }
 
-/* Footer */
+//footer
 .foot {
     font-family: "Qatar2022";
     background-color: rgb(74, 2, 24);
@@ -96,24 +100,27 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.foot__div ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.foot__div--ul li {
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
+.foot__div--ul {
+    li {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
 
 
-.foot__div--ul a {
-    color: white;
-    text-decoration: none;
-    font-size: large;
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: large;
+    }
 }
 
 .foot__div--h3 {
@@ -128,18 +135,16 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.foot__div--ubicacion iframe {
-    width: 100%;
-    height: 100%;
-}
-
-/* aca arranca las configs del main */
+//configuracion del main
 body {
-
     background-color: rgb(155, 13, 53);
-
 }
 
 .content {
@@ -157,36 +162,40 @@ body {
     border: solid rgb(74, 2, 24) 2px;
     margin: 10px;
 
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .content__article--div {
+
     width: 55%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
-}
+    a {
 
-.content__article--div a {
+        display: flex;
+        font-family: "Qatar2022";
+        font-size: xx-large;
+        text-decoration: none;
+        color: white;
+        justify-content: center;
+        text-align: center;
 
-    display: flex;
-    font-family: "Qatar2022";
-    font-size: xx-large;
-    text-decoration: none;
-    color: white;
-    justify-content: center;
-    text-align: center;
+    }
 
-}
-
-.content__article--div p {
-    display: flex;
-    font-family: "Qatar2022";
-    font-size: x-large;
-    color: white;
-    text-align: justify;
-    margin: 0 25px 0px 25px;
+    p {
+        display: flex;
+        font-family: "Qatar2022";
+        font-size: x-large;
+        color: white;
+        text-align: justify;
+        margin: 0 25px 0px 25px;
+    }
 }
 
 .content__article--img {
@@ -197,11 +206,7 @@ body {
 
 }
 
-.content__article img {
-    width: 100%;
-    height: auto;
-}
-
+// configuracion del carrousel
 /* configuracion de l carrousel */
 
 .carousel {
@@ -227,32 +232,30 @@ body {
     border: solid rgb(74, 2, 24) 2px;
     margin: 10px 0 10px 0;
 
-}
+    h2 {
+        text-align: justify;
+        text-decoration: underline;
+        font-size: xx-large;
+        color: white;
+        margin: 5px 0 10px 0;
 
-.content__div h2 {
-    text-align: justify;
-    text-decoration: underline;
-    font-size: xx-large;
-    color: white;
-    margin: 5px 0 10px 0;
+    }
 
-}
+    p {
 
-.content__div p {
+        font-family: "Qatar2022";
+        font-size: x-large;
+        text-align: justify;
+        color: white;
+        margin: 0px 30px 0px 15px;
 
-    font-family: "Qatar2022";
-    font-size: x-large;
-    text-align: justify;
-    color: white;
-    margin: 0px 30px 0px 15px;
-
+    }
 }
 
 a:not([href]):not([class]) {
     color: white;
 }
 
-/* Lista de Jugadores */
 .content__section {
 
     font-family: "Qatar2022";
@@ -261,16 +264,15 @@ a:not([href]):not([class]) {
     border: solid rgb(74, 2, 24) 2px;
     margin: 10px 0 10px 0;
 
-}
+    h2 {
 
-.content__section h2 {
+        text-decoration: underline;
+        font-size: xx-large;
+        color: white;
+        text-align: center;
+        margin: 5px 0 10px 0;
 
-    text-decoration: underline;
-    font-size: xx-large;
-    color: white;
-    text-align: center;
-    margin: 5px 0 10px 0;
-
+    }
 }
 
 .content__section--div {
@@ -304,63 +306,63 @@ a:not([href]):not([class]) {
 
 }
 
-.content__section--img img {
+.content__section--img {
+    img {
 
-    width: 90%;
+        width: 90%;
 
-}
+    }
 
-.content__section--img h3 {
+    h3 {
 
-    margin: 10px 0;
-    color: white;
-    font-size: xx-large;
+        margin: 10px 0;
+        color: white;
+        font-size: xx-large;
 
+    }
 }
 
 .content__section--list1 {
 
     width: 30%;
 
-}
+    ul {
 
-.content__section--list1 ul {
+        color: white;
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 10px;
 
-    color: white;
-    font-size: large;
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 0 10px;
-
+    }
 }
 
 .content__section--list2 {
 
     width: 30%;
 
-}
+    ul {
 
-.content__section--list2 ul {
+        color: white;
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin: 0 10px 0;
 
-    color: white;
-    font-size: large;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin: 0 10px 0;
-
+    }
 }
 
 .messi {
     background-color: rgb(155, 13, 53);
 }
 
-.form_7{
+.form_7 {
     font-family: "Qatar2022";
     margin: 1vw;
 }
 
-.form-floating>.coment__box{
+.form-floating>.coment__box {
     height: 20vw;
 }
 
@@ -370,15 +372,13 @@ a:not([href]):not([class]) {
     flex-direction: row;
     justify-content: space-between;
 
+    input {
+        margin: 4vw;
+        width: 40%;
+    }
 }
 
-.botones input{
-    margin: 4vw;
-    width: 40%;
-}
-
-/* configuracion del resposive */
-
+// configuracion del responsive 
 @media (min-width: 1200px) {
     .header__div--nav {
         font-size: xx-large;
