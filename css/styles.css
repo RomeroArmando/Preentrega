@@ -333,7 +333,7 @@ a:not([href]):not([class]) {
   width: 60vw;
 }
 .seleccion .equipo h2 {
-  font-size: xx-large;
+  font-size: x-large;
 }
 .seleccion .equipo .dt {
   margin: 2vw;
@@ -564,6 +564,14 @@ a:not([href]):not([class]) {
   color: black;
 }
 
+@media (max-width: 1366px) {
+  .seleccion .equipo .arq h2,
+  .seleccion .equipo .l2 h2,
+  .seleccion .equipo .l5 h2,
+  .seleccion .equipo .l3 h2 {
+    font-size: 26px;
+  }
+}
 @media (max-width: 1200px) {
   .header__div--nav {
     font-size: xx-large;
@@ -575,7 +583,7 @@ a:not([href]):not([class]) {
   .seleccion .equipo .l2 h2,
   .seleccion .equipo .l5 h2,
   .seleccion .equipo .l3 h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 @media (max-width: 992px) {
@@ -686,6 +694,12 @@ a:not([href]):not([class]) {
   .seleccion .equipo .arq,
   .seleccion .equipo .l2 {
     height: 25vw;
+  }
+  .seleccion .equipo .arq h2,
+  .seleccion .equipo .l2 h2,
+  .seleccion .equipo .l5 h2,
+  .seleccion .equipo .l3 h2 {
+    font-size: 19px;
   }
   .seleccion .equipo .arq a,
   .seleccion .equipo .l2 a,

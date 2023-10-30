@@ -424,7 +424,7 @@ a:not([href]):not([class]) {
         width: 60vw;
 
         h2 {
-            font-size: xx-large;
+            font-size: x-large;
         }
 
         .dt {
@@ -733,6 +733,24 @@ a:not([href]):not([class]) {
 }
 
 // configuracion del responsive 
+@media (max-width: 1366px) {
+
+    .seleccion {
+        .equipo {
+
+            .arq,
+            .l2,
+            .l5,
+            .l3 {
+                h2 {
+                    font-size: 26px;
+                }
+            }
+
+
+        }
+    }
+}
 @media (max-width: 1200px) {
     .header__div--nav {
         font-size: xx-large;
@@ -750,7 +768,7 @@ a:not([href]):not([class]) {
             .l5,
             .l3 {
                 h2 {
-                    font-size: 26px;
+                    font-size: 24px;
                 }
             }
 
@@ -912,6 +930,9 @@ a:not([href]):not([class]) {
             .l2,
             .l5,
             .l3 {
+                h2{
+                    font-size: 19px;
+                }
                 a {
                     font-size: x-large;
                 }
