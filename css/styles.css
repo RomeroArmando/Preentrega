@@ -100,6 +100,9 @@ ul {
   text-decoration: none;
   font-size: large;
 }
+.foot__div--ul a:hover {
+  color: black;
+}
 
 .foot__div--h3 {
   text-decoration: underline;
@@ -158,6 +161,10 @@ body {
   justify-content: center;
   text-align: center;
 }
+.content__article--div a:hover {
+  color: black;
+  text-decoration: underline;
+}
 .content__article--div p {
   display: flex;
   font-family: "Qatar2022";
@@ -193,6 +200,14 @@ body {
   border: solid rgb(74, 2, 24) 2px;
   padding: 1vw;
   margin: 0.5vw;
+}
+.content__div a {
+  text-decoration: none;
+  color: rgb(128, 122, 122);
+}
+.content__div a:hover {
+  text-decoration: underline;
+  color: black;
 }
 .content__div h2 {
   text-align: justify;
@@ -236,7 +251,7 @@ a:not([href]):not([class]) {
   margin: 0 0 0 10px;
 }
 .content__section .content__section--left .content__section--list1 {
-  width: 30%;
+  width: 50%;
   display: flex;
   align-items: start;
 }
@@ -254,20 +269,20 @@ a:not([href]):not([class]) {
   width: 50vw;
 }
 .content__section .content__section--right .content__section--list2 {
-  width: 30%;
+  width: 50%;
 }
 .content__section .content__section--right .content__section--list2 ul {
   color: white;
   font-size: large;
   display: flex;
   flex-direction: column;
-  text-align: end;
+  text-align: left;
   margin: 0 10px 0;
 }
 .content__section .content__section--img {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 50%;
   align-items: center;
 }
 .content__section .content__section--img img {
@@ -277,6 +292,14 @@ a:not([href]):not([class]) {
   margin: 10px 0;
   color: white;
   font-size: xx-large;
+}
+.content__section .content__section--img h3 a {
+  text-decoration: none;
+  color: white;
+}
+.content__section .content__section--img h3 a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 .form_7 {
@@ -308,6 +331,9 @@ a:not([href]):not([class]) {
 }
 .seleccion .equipo {
   width: 60vw;
+}
+.seleccion .equipo h2 {
+  font-size: xx-large;
 }
 .seleccion .equipo .dt {
   margin: 2vw;
@@ -426,17 +452,44 @@ a:not([href]):not([class]) {
 }
 .seleccion .fich_tec .accordion-body {
   background-color: rgb(155, 13, 53);
+  padding-left: 5vw;
 }
-.seleccion .fich_tec .accordion-button,
-.seleccion .fich_tec .accordion-button:not(.collapsed) {
+.seleccion .fich_tec .accordion-body p {
+  font-size: xx-large;
+}
+.seleccion .fich_tec .accordion-body iframe {
+  height: 300px;
+  width: 100%;
+}
+.seleccion .fich_tec .accordion-body ul {
+  padding: 0;
+  font-size: x-large;
+}
+.seleccion .fich_tec .accordion-body ul li {
+  margin: 1vw 0 0 0;
+}
+.seleccion .fich_tec .accordion-body ul li i {
+  margin: 0px;
+}
+.seleccion .fich_tec .accordion-body ul .in {
+  padding: 0 0 0 10px;
+}
+.seleccion .fich_tec .accordion-body ul .in li {
+  margin: 0;
+}
+.seleccion .fich_tec .accordion-body ul .in i {
+  margin: 5px;
+}
+.seleccion .accordion-button,
+.seleccion .accordion-button:not(.collapsed) {
   color: white;
   background-color: rgb(74, 2, 24);
 }
-.seleccion .fich_tec .accordion-button:focus {
+.seleccion .accordion-button:focus {
   border-color: rgb(74, 2, 24);
   box-shadow: 0 0 0 2px white;
 }
-.seleccion .fich_tec .accordion-button::after {
+.seleccion .accordion-button::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
@@ -485,7 +538,8 @@ a:not([href]):not([class]) {
 .est .contenedor .card .card-body .texto p {
   text-align: justify;
 }
-.est .contenedor .card .card-body .texto h2, .est .contenedor .card .card-body .texto h3 {
+.est .contenedor .card .card-body .texto h2,
+.est .contenedor .card .card-body .texto h3 {
   text-align: start;
   font-size: xx-large;
   padding: 0;
@@ -502,10 +556,26 @@ a:not([href]):not([class]) {
   color: white;
   font-size: large;
 }
+.est .contenedor .card .card-body .texto ul a:hover {
+  color: black;
+}
+
+.unlink {
+  color: black;
+}
 
 @media (max-width: 1200px) {
   .header__div--nav {
     font-size: xx-large;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .seleccion .equipo .arq h2,
+  .seleccion .equipo .l2 h2,
+  .seleccion .equipo .l5 h2,
+  .seleccion .equipo .l3 h2 {
+    font-size: 26px;
   }
 }
 @media (max-width: 992px) {
@@ -561,18 +631,15 @@ a:not([href]):not([class]) {
     justify-content: center;
     width: 40vw;
   }
-  .content__section .content__section--div .content__section--left .content__section--list1 ul,
-  .content__section .content__section--div .content__section--left .content__section--list2 ul,
-  .content__section .content__section--div .content__section--right .content__section--list1 ul,
-  .content__section .content__section--div .content__section--right .content__section--list2 ul {
-    text-align: center;
-  }
   .seleccion {
     flex-direction: column;
     padding: 0;
   }
   .seleccion .equipo {
     width: 100vw;
+  }
+  .seleccion .equipo h2 {
+    font-size: 19px;
   }
   .seleccion .equipo .dt div {
     display: flex;
@@ -668,7 +735,7 @@ a:not([href]):not([class]) {
   .seleccion .equipo .l2 h2,
   .seleccion .equipo .l5 h2,
   .seleccion .equipo .l3 h2 {
-    font-size: large;
+    font-size: 17px;
   }
 }
 

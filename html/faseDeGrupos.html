@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/images.jpeg">
 
+    <!-- enlace de awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- linkeo el bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -24,72 +29,77 @@
 <body>
 
     <!-- Inicio del menu de navegacion (Logo + header [Pueden ir mas cosas])-->
-  <header class="header">
+    <header class="header">
 
-    <div class="header__div">
+        <div class="header__div">
 
-        <img src="../assets/img/Logo.png" alt="Messi Campeon del Mundo">
+            <img src="../assets/img/Logo.png" alt="Messi Campeon del Mundo">
 
-        <div class="header__div--nav">
+            <div class="header__div--nav">
 
-            <h1>Mundial Qatar 2022</h1>
+                <h1>Mundial Qatar 2022</h1>
 
-            <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light">
 
-                <div class="container">
+                    <div class="container">
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <ul class="navbar-nav mb-2 mb-lg-0 header__div--ul">
+                            <ul class="navbar-nav mb-2 mb-lg-0 header__div--ul">
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown">Fases</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="faseDeGrupos.html">Fase de Grupos</a></li>
-                                    <li><a class="dropdown-item" href="octavos.html">Octavos</a></li>
-                                    <li><a class="dropdown-item" href="cuartos.html">Cuartos</a></li>
-                                    <li><a class="dropdown-item" href="semifinal.html">Semifinal</a></li>
-                                    <li><a class="dropdown-item" href="Final.html">Final</a></li>
-                                </ul>
-                            </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown">Fases</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="faseDeGrupos.html">Fase de Grupos</a></li>
+                                        <li><a class="dropdown-item disabled" href="octavos.html">Octavos</a></li>
+                                        <li><a class="dropdown-item disabled" href="cuartos.html">Cuartos</a></li>
+                                        <li><a class="dropdown-item disabled" href="semifinal.html">Semifinal</a></li>
+                                        <li><a class="dropdown-item disabled" href="Final.html">Final</a></li>
+                                    </ul>
+                                </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown">Selecciones</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item disabled" href="./Selecciones/arabia.html">Arabia Saudita</a></li>
-                                    <li><a class="dropdown-item" href="./Selecciones/mexico.html">Mexico</a></li>
-                                    <li><a class="dropdown-item disabled disabled" href="Polonia.html">Polonia</a>
-                                    </li>
-                                    <li><a class="dropdown-item disabled" href="./Selecciones/australia.html">Australia</a></li>
-                                    <li><a class="dropdown-item disabled" href="./Selecciones/Holanda.html">Holanda</a></li>
-                                    <li><a class="dropdown-item disabled" href="./Selecciones/croacia.html">Croacia</a></li>
-                                    <li><a class="dropdown-item disabled" href="./Selecciones/francia.html">Francia</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Estadios</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
-                        </ul>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown">Selecciones</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item disabled" href="./Selecciones/arabia.html">Arabia
+                                                Saudita</a></li>
+                                        <li><a class="dropdown-item" href="./Selecciones/mexico.html">Mexico</a></li>
+                                        <li><a class="dropdown-item disabled disabled" href="Polonia.html">Polonia</a>
+                                        </li>
+                                        <li><a class="dropdown-item disabled"
+                                                href="./Selecciones/australia.html">Australia</a></li>
+                                        <li><a class="dropdown-item disabled"
+                                                href="./Selecciones/Holanda.html">Holanda</a></li>
+                                        <li><a class="dropdown-item disabled"
+                                                href="./Selecciones/croacia.html">Croacia</a></li>
+                                        <li><a class="dropdown-item disabled"
+                                                href="./Selecciones/francia.html">Francia</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="./estadios/Estadios.html">Estadios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                            </ul>
+
+                        </div>
 
                     </div>
 
-                </div>
-
-            </nav>
+                </nav>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
     <!-- info del sitio -->
     <main class="content">
@@ -97,10 +107,7 @@
         <div class="content__div">
             <h2>FASE DE GRUPOS</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum exercitationem labore nesciunt, expedita
-                necessitatibus mollitia quibusdam reiciendis dolorem quasi quidem delectus animi consequatur illum
-                accusantium
-                sit vel adipisci consequuntur cumque.
+                El incio de todo, el momento en el que se quemaron los barcos para no regresar. Como supo hacer Alejandro Magno para dejar como unica opcion LA VICTORIA!
             </p>
         </div>
 
@@ -115,25 +122,24 @@
                     <div class="content__section--img">
 
                         <img src="../assets/img/banderas/argentina.webp" alt="Bandera de Argentina">
-                        <h3>Argentina</h3>
+                        <h3><a href="#">Argentina</a></h3>
 
                     </div>
 
                     <div class="content__section--list1">
 
                         <ul>
-                            <li>jugador 1</li>
-                            <li>jugador 2</li>
-                            <li>jugador 3</li>
-                            <li>jugador 4</li>
-                            <li>jugador 5</li>
-                            <li>jugador 6</li>
-                            <li>jugador 7</li>
-                            <li>jugador 8</li>
-                            <li>jugador 9</li>
-                            <li>jugador 10</li>
-                            <li>jugador 11</li>
-                            <li>Director tecnico</li>
+                            <li>23. Emiliano Martínez</li>
+                            <li>19. Nicolás Otamendi</li>
+                            <li>13. Cristian Romero</li>
+                            <li>3. Nicolás Tagliafico</li>
+                            <li>26. Nahuel Molina</li>
+                            <li>5. Leandro Paredes</li>
+                            <li>7. Rodrigo De Paul</li>
+                            <li>17. Alejandro Gómez</li>
+                            <li>11. Ángel Di María</li>
+                            <li>22. Lautaro Martínez</li>
+                            <li>10. Lionel Messi</li>
                         </ul>
 
                     </div>
@@ -145,18 +151,20 @@
                     <div class="content__section--list2">
 
                         <ul>
-                            <li>jugador 1</li>
-                            <li>jugador 2</li>
-                            <li>jugador 3</li>
-                            <li>jugador 4</li>
-                            <li>jugador 5</li>
-                            <li>jugador 6</li>
-                            <li>jugador 7</li>
-                            <li>jugador 8</li>
-                            <li>jugador 9</li>
-                            <li>jugador 10</li>
-                            <li>jugador 11</li>
-                            <li>Director tecnico</li>
+                            <li>21. Mohammed Al-Owais</li>
+                            <li>5. Ali Al-Bulayhi</li>
+                            <li>17. Hassan Altambakti</li>
+                            <li>8. 
+                                Abdulelah Al-Malki</li>
+                            <li>13. Yasser Al-Shahrani</li>
+                            <li>12. 
+                                Saud Abdulhamid</li>
+                            <li>23. Mohamed Kanno</li>
+                            <li>7. 
+                                Salman Al-Faraj</li>
+                            <li>10. Salem Al-Dawsari</li>
+                            <li>9. Feras Al-Brikan</li>
+                            <li>11. Saleh Al-Shehri</li>
                         </ul>
 
                     </div>
@@ -164,7 +172,7 @@
                     <div class="content__section--img">
 
                         <img src="../assets/img/banderas/arabia.png" alt="Bandera de Arabia">
-                        <h3>Arabia Saudita</h3>
+                        <h3><a href="#">Arabia Saudita</a></h3>
 
                     </div>
 
@@ -182,10 +190,7 @@
 
             <div class="content__article--div">
                 <h2><a>RESUMEN DEL PARTIDO</a></h2>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae, dolor cumque illo eaque
-                    error.
-                    Commodi, suscipit. Consequatur reiciendis fugiat excepturi dignissimos corporis, sed eligendi id.
-                    Perspiciatis accusantium beatae placeat?
+                <P>Un sordido resultado, una patada al pecho que lejos de desarnos sin aire nos supo acomodar las ideas. QUIEN DIJO QUE NO SE PUEDE EMPEZAR CON EL PIE IZQUIEDO!!!
                 </P>
             </div>
 
@@ -201,23 +206,35 @@
 
                     <div class="content__section--img">
                         <img src="../assets/img/banderas/argentina.webp" alt="Bandera de Argentina">
-                        <h3>Argentina</h3>
+                        <h3><a href="./Selecciones/mexico.html#arg">Argentina</a></h3>
                     </div>
 
                     <div class="content__section--list1">
                         <ul>
-                            <li>jugador 1</li>
-                            <li>jugador 2</li>
-                            <li>jugador 3</li>
-                            <li>jugador 4</li>
-                            <li>jugador 5</li>
-                            <li>jugador 6</li>
-                            <li>jugador 7</li>
-                            <li>jugador 8</li>
-                            <li>jugador 9</li>
-                            <li>jugador 10</li>
-                            <li>jugador 11</li>
-                            <li>Director tecnico</li>
+                            <li>23. Emiliano Martínez</li>
+                            <li>25. Lisandro Martínez</li>
+                            <li>19. Nicolás Otamendi</li>
+                            <li>8. Marcos Acuña</li>
+
+                            <li>8.
+                                Gonzalo Montiel</li>
+                            
+
+                            <li>18. Guido
+                                Rodríguez</li>
+                            
+                            <li>7. Rodrigo De Paul</li>
+
+                            <li>20. Alexis
+                                Mac Allister</li>
+                           
+                            <li>11. Ángel
+                                Di María</li>
+                            
+                            <li>22.
+                                Lautaro Martínez</li>
+
+                            <li>10. Lionel Messi</li>
                         </ul>
                     </div>
                 </div>
@@ -226,25 +243,34 @@
 
                     <div class="content__section--list2">
                         <ul>
-                            <li>jugador 1</li>
-                            <li>jugador 2</li>
-                            <li>jugador 3</li>
-                            <li>jugador 4</li>
-                            <li>jugador 5</li>
-                            <li>jugador 6</li>
-                            <li>jugador 7</li>
-                            <li>jugador 8</li>
-                            <li>jugador 9</li>
-                            <li>jugador 10</li>
-                            <li>jugador 11</li>
-                            <li>Director tecnico</li>
+                            <li>13. Guillermo ochoa</li>
+                            <li>3. César Montes</li>
+                            <li>15. Héctor Moreno</li>
+                            <li>2. Néstor Araujo</li>
+                            <li>23. Jesús Gallardo</li>
+
+                            <li>26. Kevin Álvarez</li>
+
+                            <li>16. Héctor Herrera</li>
+
+                            <li>18.
+                                Andrés Guardado</li>
+
+                            <li>24. Luis Chávez</li>
+
+                            <li>10.
+                                Alexis Vega</li>
+
+                            <li>22.
+                                Hirving Lozano</li>
+
                         </ul>
                     </div>
 
                     <div class="content__section--img">
 
                         <img src="../assets/img/banderas/mexico.png" alt="Bandera de Mexico">
-                        <h3>Mexico</h3>
+                        <h3><a href="./Selecciones/mexico.html#mex">Mexico</a></h3>
                     </div>
                 </div>
             </div>
@@ -259,10 +285,7 @@
 
             <div class="content__article--div">
                 <h2><a>RESUMEN DEL PARTIDO</a></h2>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae, dolor cumque illo eaque
-                    error.
-                    Commodi, suscipit. Consequatur reiciendis fugiat excepturi dignissimos corporis, sed eligendi id.
-                    Perspiciatis accusantium beatae placeat?
+                <P>Una bocanada de aire, un suspiro depues de la aflixion, una mano divina nos señalo el camino. Toda una nacion emocionada por un equipo que, como prometio nuestro capitan, no nos dejo tirados!!!
                 </P>
             </div>
         </article>
@@ -278,24 +301,25 @@
                     <div class="content__section--img">
 
                         <img src="../assets/img/banderas/argentina.webp" alt="Bandera de Argentina">
-                        <h3>Argentina</h3>
+                        <h3><a href="#">Argentina</a></h3>
 
                     </div>
 
                     <div class="content__section--list1">
                         <ul>
-                            <li>jugador 1</li>
-                            <li>jugador 2</li>
-                            <li>jugador 3</li>
-                            <li>jugador 4</li>
-                            <li>jugador 5</li>
-                            <li>jugador 6</li>
-                            <li>jugador 7</li>
-                            <li>jugador 8</li>
-                            <li>jugador 9</li>
-                            <li>jugador 10</li>
-                            <li>jugador 11</li>
-                            <li>Director tecnico</li>
+                            <li>23. Emiliano Martínez</li>
+                            <li>19. Nicolás Otamendi</li>
+                            <li>13. Cristian Romero</li>
+                            <li>8. Marcos Acuña</li>
+                            <li>26. Nahuel Molina</li>
+                            <li>24. 
+                                Enzo Fernández</li>
+                            <li>20. Alexis Mac Allister</li>
+                            <li>7. Rodrigo De Paul</li>
+                            <li>10. Lionel Messi</li>
+                            <li>9. Julián Álvarez</li>
+                            <li>11. Ángel Di María</li>
+                            
                         </ul>
 
                     </div>
@@ -306,25 +330,28 @@
 
                     <div class="content__section--list2">
                         <ul>
-                            <li>jugador 1</li>
-                            <li>jugador 2</li>
-                            <li>jugador 3</li>
-                            <li>jugador 4</li>
-                            <li>jugador 5</li>
-                            <li>jugador 6</li>
-                            <li>jugador 7</li>
-                            <li>jugador 8</li>
-                            <li>jugador 9</li>
-                            <li>jugador 10</li>
-                            <li>jugador 11</li>
-                            <li>Director tecnico</li>
+                            <li>1. 
+                                Wojciech Szczesny</li>
+                            <li>14. Jakub Kiwior</li>
+                            <li>15. 
+                                Kamil Glik</li>
+                            <li>18. Bartosz Bereszynski</li>
+                            <li>2. Matty Cash</li>
+                            <li>10. Grzegorz Krychowiak</li>
+                            <li>6. Krystian Bielik</li>
+                            <li>24. 
+                                Przemyslaw Frankowski</li>
+                            <li>20. Piotr Zielinski</li>
+                            <li>16. 
+                                Karol Swiderski</li>
+                            <li>9. Robert Lewandowski</li>
                         </ul>
                     </div>
 
                     <div class="content__section--img">
 
                         <img src="../assets/img/banderas/polonia.png" alt="Bandera de Polonia">
-                        <h3>Polonia</h3>
+                        <h3><a href="#">Polonia</a></h3>
 
                     </div>
 
@@ -340,10 +367,8 @@
 
             <div class="content__article--div">
                 <h2><a>RESUMEN DEL PARTIDO</a></h2>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut molestiae, dolor cumque illo eaque
-                    error.
-                    Commodi, suscipit. Consequatur reiciendis fugiat excepturi dignissimos corporis, sed eligendi id.
-                    Perspiciatis accusantium beatae placeat?
+                <P>
+                    El primer partido que representaba una amenasa, un legitimo "mata-mata" supimos aprender de los errores y superarlos propios a nuestro estilo.
                 </P>
             </div>
         </article>
@@ -367,10 +392,10 @@
             <ul class="foot__div--ul">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="faseDeGrupos.html">Fase de Grupos</a></li>
-                <li><a href="octavos.html">Octavos</a></li>
-                <li><a href="cuartos.html">Cuartos</a></li>
-                <li><a href="semifinal.html">Semifinal</a></li>
-                <li><a href="Final.html">Final</a></li>
+                <li><a href="#">Octavos</a></li>
+                <li><a href="#">Cuartos</a></li>
+                <li><a href="#">Semifinal</a></li>
+                <li><a href="#">Final</a></li>
 
             </ul>
         </div>

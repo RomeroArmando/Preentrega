@@ -123,6 +123,10 @@ ul {
         color: white;
         text-decoration: none;
         font-size: large;
+
+        &:hover {
+            color: black;
+        }
     }
 }
 
@@ -191,6 +195,11 @@ body {
         justify-content: center;
         text-align: center;
 
+        &:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
     }
 
     p {
@@ -235,6 +244,16 @@ body {
     border: solid rgb(74, 2, 24) 2px;
     padding: 1vw;
     margin: 0.5vw;
+
+    a {
+        text-decoration: none;
+        color: rgb(128, 122, 122);
+
+        &:hover {
+            text-decoration: underline;
+            color: black;
+        }
+    }
 
     h2 {
         text-align: justify;
@@ -292,7 +311,7 @@ a:not([href]):not([class]) {
 
         .content__section--list1 {
 
-            width: 30%;
+            width: 50%;
             display: flex;
             align-items: start;
 
@@ -319,7 +338,7 @@ a:not([href]):not([class]) {
 
         .content__section--list2 {
 
-            width: 30%;
+            width: 50%;
 
             ul {
 
@@ -327,7 +346,7 @@ a:not([href]):not([class]) {
                 font-size: large;
                 display: flex;
                 flex-direction: column;
-                text-align: end;
+                text-align: left;
                 margin: 0 10px 0;
 
             }
@@ -339,7 +358,7 @@ a:not([href]):not([class]) {
 
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 50%;
         align-items: center;
 
         img {
@@ -353,6 +372,16 @@ a:not([href]):not([class]) {
             margin: 10px 0;
             color: white;
             font-size: xx-large;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: black;
+                }
+            }
 
         }
     }
@@ -393,6 +422,10 @@ a:not([href]):not([class]) {
 
     .equipo {
         width: 60vw;
+
+        h2 {
+            font-size: xx-large;
+        }
 
         .dt {
             margin: 2vw;
@@ -539,25 +572,60 @@ a:not([href]):not([class]) {
 
         .accordion-body {
             background-color: $primary;
+
+            padding-left: 5vw;
+
+            p {
+                font-size: xx-large;
+            }
+
+            iframe {
+                height: 300px;
+                width: 100%;
+            }
+
+            ul {
+                padding: 0;
+                font-size: x-large;
+
+                li {
+                    margin: 1vw 0 0 0;
+
+                    i {
+                        margin: 0px;
+                    }
+                }
+
+                .in {
+                    padding: 0 0 0 10px;
+
+                    li {
+                        margin: 0;
+                    }
+
+                    i {
+                        margin: 5px;
+                    }
+                }
+
+            }
         }
+    }
 
-        .accordion-button,
-        .accordion-button:not(.collapsed) {
-            color: $font;
-            background-color: $secondary;
+    .accordion-button,
+    .accordion-button:not(.collapsed) {
+        color: $font;
+        background-color: $secondary;
 
-        }
+    }
 
-        .accordion-button:focus {
-            border-color: $secondary;
-            box-shadow: 0 0 0 2px $font;
-        }
+    .accordion-button:focus {
+        border-color: $secondary;
+        box-shadow: 0 0 0 2px $font;
+    }
 
-        .accordion-button::after {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-        }
-
-
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     }
 
 }
@@ -565,92 +633,129 @@ a:not([href]):not([class]) {
 //configuracion de Estadios
 
 .est {
-    
-    h2{
+
+    h2 {
         margin: 0vw;
     }
 
-    h1{
+    h1 {
         margin: 2vw;
         text-align: center;
 
     }
+
     .contenedor {
 
         padding: 1vw;
 
-        .card{
+        .card {
 
             border: 3px solid $secondary;
 
             width: 100%;
             background-color: $secondary;
-            img{
-                
+
+            img {
+
                 width: 60%;
 
             }
 
-            .card-body{
+            .card-body {
                 padding: 1vw;
                 display: flex;
                 flex-direction: row;
                 background-color: $primary;
 
-                .imagen{
-                    
+                .imagen {
+
                     width: 40%;
-                    img{
+
+                    img {
                         border-radius: 20px;
                         width: 100%;
                     }
-                    h2{
+
+                    h2 {
                         margin: 2vw 0 0 0;
                     }
-                    iframe{
+
+                    iframe {
                         border: 5px solid $secondary;
                         width: 100%;
-                        
+
                     }
                 }
 
-                .texto{
+                .texto {
                     padding: 1vw 0 0 2vw;
                     width: 60%;
-                    p{
+
+                    p {
                         text-align: justify;
                     }
-                    h2, h3{
+
+                    h2,
+                    h3 {
                         text-align: start;
                         font-size: xx-large;
                         padding: 0;
                     }
-                    ul{
+
+                    ul {
                         display: flex;
                         flex-direction: column;
                         align-items: start;
                         padding: 0.5vw 0vw 0 0.5vw;
-                        
-                        a{
+
+                        a {
                             text-align: start;
                             text-decoration: none;
                             color: white;
                             font-size: large;
+
+                            &:hover {
+                                color: black;
+                            }
                         }
                     }
-                    
+
                 }
-                
+
             }
         }
 
     }
 }
 
+.unlink {
+    color: black;
+}
+
 // configuracion del responsive 
 @media (max-width: 1200px) {
     .header__div--nav {
         font-size: xx-large;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .seleccion {
+        .equipo {
+
+            .arq,
+            .l2,
+            .l5,
+            .l3 {
+                h2 {
+                    font-size: 26px;
+                }
+            }
+
+
+        }
     }
 }
 
@@ -717,10 +822,6 @@ a:not([href]):not([class]) {
                 .content__section--list2 {
                     justify-content: center;
                     width: 40vw;
-
-                    ul {
-                        text-align: center;
-                    }
                 }
             }
 
@@ -734,6 +835,10 @@ a:not([href]):not([class]) {
 
         .equipo {
             width: 100vw;
+
+            h2 {
+                font-size: 19px;
+            }
 
             .dt {
                 div {
@@ -813,7 +918,7 @@ a:not([href]):not([class]) {
             }
 
             .l3 {
-                div{
+                div {
                     margin: 0 5vw 0 5vw;
                 }
             }
@@ -862,6 +967,7 @@ a:not([href]):not([class]) {
 
     .seleccion {
         .equipo {
+
             .dt {
                 div {
                     display: flex;
@@ -874,7 +980,7 @@ a:not([href]):not([class]) {
             .l5,
             .l3 {
                 h2 {
-                    font-size: large;
+                    font-size: 17px;
                 }
             }
 
