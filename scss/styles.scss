@@ -751,6 +751,7 @@ a:not([href]):not([class]) {
         }
     }
 }
+
 @media (max-width: 1200px) {
     .header__div--nav {
         font-size: xx-large;
@@ -775,6 +776,8 @@ a:not([href]):not([class]) {
 
         }
     }
+
+
 }
 
 @media (max-width: 992px) {
@@ -890,26 +893,76 @@ a:not([href]):not([class]) {
         }
     }
 
+    .est {
+        .contenedor{
+            .card {
+
+                .card-body {
+    
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    .imagen{
+                        width: 90vw;
+                        display: flex;
+                        flex-direction: row;
+
+                        img {
+
+                            width: 50%;
+
+                        }
+
+                        .resp{
+
+                            display: flex;
+                            flex-direction: column;
+                            width: 50vw;
+                            align-items: center;
+                            margin-left: 5vw;
+                            iframe{
+
+                                width: 90%;
+                                height: 80%;
+
+                            }
+                            
+                        }
+
+                    }
+
+                    .texto{
+                        padding: 2vw;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 720px) {
+
     .foot {
         flex-direction: column;
-    }
 
-    .foot__div {
-        align-items: center;
-        flex-direction: row;
-    }
+        .foot__div {
+            margin: 0;
+            padding: 2vw;
+            align-items: center;
 
-    .foot__div--h3 {
-        width: 50vw;
 
-    }
+            .foot__div--h3 {
+                width: 50vw;
 
-    .foot__div--ul {
-        border: solid 3px white;
-        width: 50vw;
+            }
+
+            .foot__div--ul {
+                border-bottom: solid 2px white;
+                width: 100%;
+            }
+        }
     }
 
     .seleccion {
@@ -930,9 +983,10 @@ a:not([href]):not([class]) {
             .l2,
             .l5,
             .l3 {
-                h2{
+                h2 {
                     font-size: 19px;
                 }
+
                 a {
                     font-size: x-large;
                 }
