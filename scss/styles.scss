@@ -8,7 +8,7 @@
 
 //declaracion de fuente
 @font-face {
-    font-family: "Qatar2022";
+    font-family: $font-fa;
     src: url("../assets/fonts/Qatar2022.woff2");
 }
 
@@ -17,158 +17,140 @@ ul {
     text-decoration: none;
 }
 
-//header
-.header {
-    font-family: "Qatar2022";
-    background-color: rgb(74, 2, 24);
-    display: flex;
-    flex-direction: row;
-}
-
-.header__div {
-    display: flex;
-    flex-direction: row;
-
-    padding: 0 0 3px 3px;
-
-    img {
-        width: 10vw;
-    }
-}
-
-.header__div--nav {
-    display: flex;
-    flex-direction: column;
-    width: 85vw;
-    color: white;
-    text-align: center;
-    font-size: xx-large;
-    align-items: center;
-    justify-content: center;
-
-    h1 {
-        margin: 2vw 0;
-        padding: 0;
-    }
-
-    nav {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-}
-
-.navbar {
-
-    li {
-        display: flex;
-        flex-direction: row;
-    }
-
-    ul {
-        width: 100%;
-        justify-content: space-between;
-    }
-}
-
-//configuracion del color de letra y botones del nav
-.navbar-light .navbar-nav .nav-link {
-    color: white;
-}
-
-.navbar-light .navbar-toggler {
-    color: white;
-    border-color: white;
-}
-
-.navbar-light .navbar-toggler-icon {
-
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-
-}
-
-//footer
+.header,
 .foot {
-    font-family: "Qatar2022";
-    background-color: rgb(74, 2, 24);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    font-family: $font-fa;
+    background-color: $secondary;
+    @extend .flex-row;
+    @extend .article-layout;
 }
 
-.foot__div {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
 
-    ul {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
+.header {
+    .header__div {
+        @extend .flex-row;
+        padding: 0 0 3px 3px;
+
+        img {
+            width: 10vw;
+        }
+    }
+
+    .header__div--nav {
+        @extend .flex-column;
+        width: 85vw;
+        color: $font;
+        text-align: center;
+        font-size: xx-large;
         align-items: center;
+        justify-content: center;
+
+        h1 {
+            margin: 2vw 0;
+            padding: 0;
+        }
+
+        nav {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+    }
+
+    .navbar {
+        li {
+            @extend .flex-row;
+        }
+
+        ul {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: $font;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: $font;
+        border-color: $font;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 }
 
-.foot__div--ul {
-    li {
-        padding-top: 20px;
-        padding-bottom: 10px;
+.foot {
+
+    .foot__div {
+        margin: 10px 0;
+        @extend .flex-column;
+        align-items: center;
+
+        ul {
+            padding: 0;
+            @extend .flex-column;
+            align-items: center;
+        }
     }
 
+    .foot__div--ul {
+        li {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
 
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: large;
+        a {
+            color: $font;
+            text-decoration: none;
+            font-size: large;
 
-        &:hover {
-            color: black;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+
+    .foot__div--h3 {
+        text-decoration: underline;
+        font-size: x-large;
+        color: $font;
+        text-align: center;
+    }
+
+    .foot__div--ubicacion {
+        margin: 10px 0;
+        @extend .flex-column;
+
+        iframe {
+            width: 100%;
+            height: 100%;
         }
     }
 }
 
-.foot__div--h3 {
-    text-decoration: underline;
-    font-size: x-large;
-    color: white;
-    text-align: center;
-}
 
-.foot__div--ubicacion {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    iframe {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-//configuracion del main
+// Estilos comunes
 body {
-    font-family: "Qatar2022";
-    color: white;
-    background-color: rgb(155, 13, 53);
+    font-family: $font-fa;
+    color: $font;
+    background-color: $primary;
 }
 
+/* Contenido principal */
 .content {
-
     display: flex;
     flex-direction: column;
-
 }
 
 .content__article {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border: solid rgb(74, 2, 24) 2px;
+    @extend .flex-row;
+    @extend .article-layout;
+    border: solid $secondary 2px;
     margin: 0.5vw;
 
     img {
@@ -178,70 +160,45 @@ body {
 }
 
 .content__article--div {
+    @extend .article-div;
+    @extend .article-layout;
+    @extend .flex-column;
 
-    width: 55%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 
     a {
-
-        display: flex;
-        font-family: "Qatar2022";
-        font-size: xx-large;
-        text-decoration: none;
-        color: white;
-        justify-content: center;
-        text-align: center;
+        @extend .article-link;
 
         &:hover {
             color: black;
             text-decoration: underline;
         }
-
     }
 
     p {
-        display: flex;
-        font-family: "Qatar2022";
-        font-size: x-large;
-        color: white;
-        text-align: justify;
-        margin: 0 25px 0px 25px;
+        @extend .article-paragraph;
     }
 }
 
 .content__article--img {
-
     padding: 10px;
-
     width: 40%;
-
 }
 
-// configuracion del carrousel
 .carousel {
-
     margin: 3vw 10vw;
 }
 
 .carousel-caption {
     background-color: rgba(202, 31, 88, 0.8);
-    font-family: "Qatar2022";
+    font-family: $font-fa;
     font-size: x-large;
     color: rgba(255, 255, 255, 1);
 }
 
-/* config de tarjetas */
 .content__div {
-
-    font-family: "Qatar2022";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid rgb(74, 2, 24) 2px;
+    @extend .content-card;
+    @extend .flex-column;
+    border: solid $secondary 2px;
     padding: 1vw;
     margin: 0.5vw;
 
@@ -256,139 +213,90 @@ body {
     }
 
     h2 {
-        text-align: justify;
-        text-decoration: underline;
-        font-size: xx-large;
-        color: white;
-        margin: 5px 0 10px 0;
-
+        @extend .content-heading;
     }
 
     p {
-
-        font-family: "Qatar2022";
-        font-size: x-large;
-        text-align: justify;
-        color: white;
-        margin: 0px 30px 0px 15px;
-
+        @extend .content-paragraph;
     }
 }
 
 a:not([href]):not([class]) {
-    color: white;
+    color: $font;
 }
 
 .content__section {
-
-    font-family: "Qatar2022";
-    display: flex;
-    flex-direction: column;
-    border: solid rgb(74, 2, 24) 2px;
+    @extend .section-content;
+    @extend .flex-column;
+    border: solid $secondary 2px;
     margin: 0.5vw;
 
     h2 {
-
-        text-decoration: underline;
-        font-size: xx-large;
-        color: white;
-        text-align: center;
-        margin: 5px 0 10px 0;
-
+        @extend .section-heading;
     }
 
     .content__section--div {
-
-        display: flex;
-        flex-direction: row;
-
+        @extend .flex-row;
     }
 
     .content__section--left {
+        @extend .section-left;
+    }
 
-        width: 50vw;
-        margin: 0 0 0 10px;
+    .content__section--list1 {
+        @extend .section-list1;
 
-        .content__section--list1 {
-
-            width: 50%;
-            display: flex;
-            align-items: start;
-
-            ul {
-
-                color: white;
-                font-size: large;
-                display: flex;
-                flex-direction: column;
-                text-align: start;
-                padding: 0;
-                margin: 0 0 0 10px;
-
-            }
+        ul {
+            @extend .section-list-style;
         }
-
     }
 
     .content__section--right {
-
-        justify-content: end;
-        width: 50vw;
-
+        @extend .section-right;
 
         .content__section--list2 {
-
-            width: 50%;
+            @extend .section-list2;
 
             ul {
-
-                color: white;
-                font-size: large;
-                display: flex;
-                flex-direction: column;
-                text-align: left;
-                margin: 0 10px 0;
-
+                @extend .section-list-style;
+                @extend .flex-column;
             }
+        }
+
+        .content__section--list3 {
+            display: none;
         }
     }
 
-
     .content__section--img {
+        @extend .section-img;
+        @extend .flex-column;
 
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        align-items: center;
 
         img {
-
             width: 90%;
-
         }
 
         h3 {
-
-            margin: 10px 0;
-            color: white;
-            font-size: xx-large;
+            @extend .section-subheading;
 
             a {
                 text-decoration: none;
-                color: white;
+                color: $font;
 
                 &:hover {
                     text-decoration: underline;
                     color: black;
                 }
             }
-
         }
     }
 }
 
+
+
 .form_7 {
-    font-family: "Qatar2022";
+    font-family: $font-fa;
     margin: 1vw;
 
     label {
@@ -402,8 +310,7 @@ a:not([href]):not([class]) {
 
 .botones {
 
-    display: flex;
-    flex-direction: row;
+    @extend .flex-row;
     justify-content: space-between;
 
     input {
@@ -417,8 +324,7 @@ a:not([href]):not([class]) {
 .seleccion {
 
     padding: 1vw;
-    display: flex;
-    flex-direction: row;
+    @extend .flex-row;
 
     .equipo {
         width: 60vw;
@@ -429,8 +335,8 @@ a:not([href]):not([class]) {
 
         .dt {
             margin: 2vw;
-            font-family: "Qatar2022";
-            color: white;
+            font-family: $font-fa;
+            color: $font;
             display: flex;
             justify-content: center;
 
@@ -438,7 +344,7 @@ a:not([href]):not([class]) {
             div {
                 display: flex;
                 width: 40vw;
-                background-color: rgb(74, 2, 24);
+                background-color: $secondary;
                 border-radius: 20px;
 
                 img {
@@ -447,8 +353,7 @@ a:not([href]):not([class]) {
                 }
 
                 .name {
-                    display: flex;
-                    flex-direction: column;
+                    @extend .flex-column;
                     margin: 1vw;
                 }
 
@@ -468,8 +373,7 @@ a:not([href]):not([class]) {
 
 
             div {
-                display: flex;
-                flex-direction: column;
+                @extend .flex-column;
                 width: 14vw;
                 text-align: center;
                 align-items: center;
@@ -487,14 +391,12 @@ a:not([href]):not([class]) {
             padding: 0.5vw;
             background-color: rgb(4, 192, 4, 0.5);
             height: 20vw;
-            display: flex;
-            flex-direction: row;
+            @extend .flex-row;
             justify-content: center;
 
             div {
                 margin: 0 6vw 0;
-                display: flex;
-                flex-direction: column;
+                @extend .flex-column;
                 width: 14vw;
                 text-align: center;
                 align-items: center;
@@ -510,13 +412,11 @@ a:not([href]):not([class]) {
             padding: 0.5vw;
             background-color: rgb(4, 192, 4, 0.5);
             height: 30vw;
-            display: flex;
-            flex-direction: row;
+            @extend .flex-row;
 
 
             div {
-                display: flex;
-                flex-direction: column;
+                @extend .flex-column;
                 width: 14vw;
                 text-align: center;
                 align-items: center;
@@ -540,14 +440,12 @@ a:not([href]):not([class]) {
             padding: 0.5vw;
             background-color: rgb(4, 192, 4, 0.4);
             height: 30vw;
-            display: flex;
-            flex-direction: row;
+            @extend .flex-row;
             justify-content: center;
 
             div {
                 margin: 0 2vw 0 2vw;
-                display: flex;
-                flex-direction: column;
+                @extend .flex-column;
                 width: 14vw;
                 text-align: center;
                 align-items: center;
@@ -566,7 +464,6 @@ a:not([href]):not([class]) {
 
     .fich_tec {
 
-        //background: linear-gradient(to bottom, rgb(5, 126, 5), rgb(0, 241, 0)); 
         padding: 1vw;
         width: 40vw;
 
@@ -593,6 +490,15 @@ a:not([href]):not([class]) {
 
                     i {
                         margin: 0px;
+
+                    }
+
+                    .out {
+                        color: #ff0000;
+                    }
+
+                    .in {
+                        color: #00ff00;
                     }
                 }
 
@@ -663,9 +569,12 @@ a:not([href]):not([class]) {
 
             .card-body {
                 padding: 1vw;
-                display: flex;
-                flex-direction: row;
+                @extend .flex-row;
                 background-color: $primary;
+
+                .resp2 {
+                    display: none;
+                }
 
                 .imagen {
 
@@ -674,6 +583,19 @@ a:not([href]):not([class]) {
                     img {
                         border-radius: 20px;
                         width: 100%;
+                    }
+
+                    .resp,
+                    .resp2 {
+                        h2 {
+                            margin: 2vw 0 0 0;
+                        }
+
+                        iframe {
+                            border: 5px solid $secondary;
+                            width: 100%;
+
+                        }
                     }
 
                     h2 {
@@ -711,7 +633,7 @@ a:not([href]):not([class]) {
                         a {
                             text-align: start;
                             text-decoration: none;
-                            color: white;
+                            color: $font;
                             font-size: large;
 
                             &:hover {
@@ -833,16 +755,26 @@ a:not([href]):not([class]) {
             .content__section--right {
                 margin: 1vw;
                 width: 95vw;
-                flex-direction: row;
+                flex-direction: column;
 
                 .content__section--img {
-                    width: 50vw;
+                    width: 95vw;
                 }
 
                 .content__section--list1,
-                .content__section--list2 {
+                .content__section--list2,
+                .content__section--list3 {
+                    display: flex;
                     justify-content: center;
-                    width: 40vw;
+                    width: 95vw;
+
+                    ul {
+                        font-size: xx-large;
+                    }
+                }
+
+                .content__section--list2 {
+                    display: none;
                 }
             }
 
@@ -886,6 +818,15 @@ a:not([href]):not([class]) {
                     }
                 }
             }
+
+            .arq,
+            .l2,
+            .l5,
+            .l3 {
+                h2 {
+                    font-size: 19px;
+                }
+            }
         }
 
         .fich_tec {
@@ -894,46 +835,50 @@ a:not([href]):not([class]) {
     }
 
     .est {
-        .contenedor{
+        .contenedor {
             .card {
 
                 .card-body {
-    
+
                     flex-direction: column;
                     align-items: center;
-                    
-                    .imagen{
+
+                    .imagen {
                         width: 90vw;
-                        display: flex;
-                        flex-direction: row;
 
                         img {
 
-                            width: 50%;
+                            width: 90%;
 
                         }
 
-                        .resp{
+                        .resp {
 
-                            display: flex;
-                            flex-direction: column;
-                            width: 50vw;
-                            align-items: center;
-                            margin-left: 5vw;
-                            iframe{
+                            display: none;
 
-                                width: 90%;
-                                height: 80%;
-
-                            }
-                            
                         }
 
                     }
 
-                    .texto{
+                    .texto {
                         padding: 2vw;
                         width: 100%;
+                    }
+
+                    .resp2 {
+                        display: flex;
+                        flex-direction: column;
+                        width: 90vw;
+
+                        h2 {
+                            margin: 2vw 0 0 0;
+                        }
+
+                        iframe {
+                            border: 5px solid $secondary;
+                            width: 100%;
+
+                        }
                     }
                 }
             }
@@ -959,7 +904,7 @@ a:not([href]):not([class]) {
             }
 
             .foot__div--ul {
-                border-bottom: solid 2px white;
+                border-bottom: solid 2px $font;
                 width: 100%;
             }
         }
@@ -1055,7 +1000,7 @@ a:not([href]):not([class]) {
             .l5,
             .l3 {
                 h2 {
-                    font-size: 17px;
+                    font-size: 12px;
                 }
             }
 

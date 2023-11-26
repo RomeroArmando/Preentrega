@@ -1,4 +1,155 @@
 $primary: rgb(155, 13, 53);
 $secondary: rgb(74, 2, 24);
 $font: white;
+$font-fa: "Qatar2022";
 
+// Estilos reutilizables para flex-direction
+.flex-row {
+                    display: flex;
+                    flex-direction: row;
+}
+
+.flex-column {
+                        display: flex;
+                        flex-direction: column;
+}
+
+// Estilos reutilizables
+.article-layout {
+    justify-content: space-around;
+}
+
+.article-div {
+    width: 55%;
+    height: auto;
+}
+
+.article-link {
+    display: flex;
+    font-family: $font-fa;
+    font-size: xx-large;
+    text-decoration: none;
+    color: $font;
+    justify-content: center;
+    text-align: center;
+}
+
+.article-paragraph {
+    display: flex;
+    font-family: $font-fa;
+    font-size: x-large;
+    color: $font;
+    text-align: justify;
+    margin: 0 25px 0px 25px;
+}
+
+.content-card {
+    font-family: $font-fa;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+
+.content-heading {
+    text-align: justify;
+    text-decoration: underline;
+    font-size: xx-large;
+    color: $font;
+    margin: 5px 0 10px 0;
+}
+
+.content-paragraph {
+    font-family: $font-fa;
+    font-size: x-large;
+    text-align: justify;
+    color: $font;
+    margin: 0px 30px 0px 15px;
+}
+
+.section-content {
+    font-family: $font-fa;
+    border: solid $secondary 2px;
+    margin: 0.5vw;
+}
+
+.section-heading {
+    text-decoration: underline;
+    font-size: xx-large;
+    color: $font;
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+.section-left {
+    width: 50vw;
+    margin: 0 0 0 10px;
+}
+
+.section-list1 {
+    width: 50%;
+    display: flex;
+    align-items: start;
+
+    ul {
+        color: $font;
+        font-size: large;
+        @extend .flex-column;
+        text-align: start;
+        padding: 0;
+        margin: 0 0 0 10px;
+    }
+}
+
+.section-right {
+    justify-content: end;
+    width: 50vw;
+}
+
+.section-list2 {
+    width: 50%;
+
+    ul {
+        color: $font;
+        font-size: large;
+        @extend .flex-column;
+        text-align: left;
+        margin: 0 10px 0;
+    }
+}
+
+.section-list3 {
+    display: none;
+}
+
+.section-img {
+    width: 50%;
+    align-items: center;
+
+    img {
+        width: 90%;
+    }
+}
+
+.section-subheading {
+    margin: 10px 0;
+    color: $font;
+    font-size: xx-large;
+
+    a {
+        text-decoration: none;
+        color: $font;
+
+        &:hover {
+            text-decoration: underline;
+            color: black;
+        }
+    }
+}
+
+.section-list-style {
+    color: $font;
+    font-size: large;
+    text-align: start;
+    padding: 0;
+    margin: 0 0 0 10px;
+}
